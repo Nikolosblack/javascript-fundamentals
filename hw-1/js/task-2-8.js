@@ -5,19 +5,19 @@ console.log(myLastName);
 
 // task3
 
-// let myNameInUkrainian;
-// let myNameInEnglish;
+let myNameInUkrainian;
+let myNameInEnglish;
 
-// myNameInUkrainian = "Микола";
-// myNameInEnglish = "Nicholas";
+myNameInUkrainian = "Микола";
+myNameInEnglish = "Nicholas";
 
-// alert(myNameInUkrainian);
-// alert(myNameInEnglish);
+alert(myNameInUkrainian);
+alert(myNameInEnglish);
 
-// myNameInUkrainian = myNameInEnglish;
+myNameInUkrainian = myNameInEnglish;
 
-// alert(myNameInUkrainian);
-// alert(myNameInEnglish);
+alert(myNameInUkrainian);
+alert(myNameInEnglish);
 
 // task4
 

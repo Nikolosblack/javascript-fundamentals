@@ -43,11 +43,11 @@ console.log(isAdult);
 
 // task6
 
-const myName = "Nicholas";          // String
-const myAge = 27;                   // Number
-const myGroup = "Lv-678.JS Core";   // String
-const yearOfBirth = 1994;           // Number
-const isMarried = false;            // Baloon
+const myName = "Nicholas";
+const myAge = 27;
+const myGroup = "Lv-678.JS Core";
+const yearOfBirth = 1994;
+const isMarried = false;
 
 console.log(myAge);
 console.log(yearOfBirth);

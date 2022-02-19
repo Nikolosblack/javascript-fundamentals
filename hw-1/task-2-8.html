@@ -25,16 +25,26 @@
             padding: 20px 20px;
             border-radius: 10px;
             background: rgba(34, 35, 35, 0.8);
+            z-index: 999;
         }   
-        span {
+        span.hour,
+        span.day,
+        span.days {
             color: red;
+        }
+        span.login,
+        span.email,
+        span.password {
+            color: orangered;
+        }
+        span#seconds-counter {
+            color: springgreen;
         }
     </style>  
 </head>
 <body>
-    <p class="prompt__result"></p>
-    
-    <p class="result__seconds">There are <span class="red"></span> seconds in an hour⏰and <span class="redd"></span> seconds in a day⌚.<br>In 28 days it’s <span class="reddd"></span> seconds⌛.<br>Interesting fact I have already lived <span id='seconds-counter'> </span> seconds🕓.</p>
+    <p class="prompt__result">Dear <span class="login"></span> your email is <span class="email"></span> your password is <span class="password"></span> ✌️</p>
+    <p class="result__seconds">There are <span class="hour"></span> seconds in an hour⏰and <span class="day"></span> seconds in a day⌚.<br>In 28 days it’s <span class="days"></span> seconds⌛.<br>Interesting fact I have already lived <span id='seconds-counter'> </span> seconds🕓.</p>
     <script src="./js/task-2-8.js"></script>
 </body>
 </html>

@@ -68,7 +68,10 @@ const userLogin = prompt("Please enter your Login", "Enter your login here");
 const userEmail = prompt("Please enter your Email", "Enter your email here");
 const userPassword = prompt("Please enter your Password", "Enter your password here");
 alert("Dear " + userLogin + " , " + " your email is " + userEmail + " , " + " your password is " + userPassword + "✌️");
-document.querySelector(".prompt__result").innerHTML = "Dear " + userLogin + " , " + " your email is " + userEmail + " , " + " your password is " + userPassword + "✌️";  
+
+document.querySelector(".login").innerHTML = userLogin;
+document.querySelector(".email").innerHTML = userEmail;
+document.querySelector(".password").innerHTML = userPassword;
 
 // task8
 
@@ -87,19 +90,13 @@ alert(secondsInAMonth);
 
 const daysInAYear = 365;
 const secondsInaYear = secondsInADay * daysInAYear;
-const secondsInMyLive = myAge * secondsInaYear;
+let secondsInMyLive = myAge * secondsInaYear;
 
-// const resultOfSeconds = "There are " + secondsInAnHour  + " seconds in an hour⏰ " +  " and " + secondsInADay + " seconds in a day⌚. " + " In 28 days it’s " + secondsInAMonth + " seconds⌛." + " Interesting fact I have already lived " + secondsInMyLive + " seconds🕓";
+document.querySelector(".hour").innerHTML = secondsInAnHour;
+document.querySelector(".day").innerHTML = secondsInADay;
+document.querySelector(".days").innerHTML = secondsInADay;
 
-// document.querySelector(".result__seconds").innerHTML = resultOfSeconds;
-
-document.querySelector(".red").innerHTML = secondsInAnHour;
-document.querySelector(".redd").innerHTML = secondsInADay;
-document.querySelector(".reddd").innerHTML = secondsInADay;
-// document.querySelector(".redddd").innerHTML = secondsInMyLive;
-
-
-let seconds =  851472000;
+let seconds =  secondsInMyLive;
 const el = document.getElementById('seconds-counter');
 
 function incrementSeconds() {

@@ -89,10 +89,14 @@ const daysInAYear = 365;
 const secondsInaYear = secondsInADay * daysInAYear;
 const secondsInMyLive = myAge * secondsInaYear;
 
-const resultOfSeconds = "There are " + secondsInAnHour  + " seconds in an hour⏰ " +  " and " + secondsInADay + " seconds in a day⌚. " + " In 28 days it’s " + secondsInAMonth + " seconds⌛." + " Interesting fact I have already lived " + secondsInMyLive + " seconds🕓";
+// const resultOfSeconds = "There are " + secondsInAnHour  + " seconds in an hour⏰ " +  " and " + secondsInADay + " seconds in a day⌚. " + " In 28 days it’s " + secondsInAMonth + " seconds⌛." + " Interesting fact I have already lived " + secondsInMyLive + " seconds🕓";
 
-document.querySelector(".result__seconds").innerHTML = resultOfSeconds;
+// document.querySelector(".result__seconds").innerHTML = resultOfSeconds;
 
+document.querySelector(".red").innerHTML = secondsInAnHour;
+document.querySelector(".redd").innerHTML = secondsInADay;
+document.querySelector(".reddd").innerHTML = secondsInADay;
+document.querySelector(".redddd").innerHTML = secondsInMyLive;
 
 
 

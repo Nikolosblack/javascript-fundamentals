@@ -11,9 +11,10 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
             margin: 0 auto;
+            background-color: #000;
+            color: #fff;
         }  
         p.prompt__result,
         p.result__seconds {  
@@ -22,13 +23,18 @@
             font-weight: 700;
             margin: 15px;
             padding: 15px 20px;
-            border: 1px solid #000;
+            border-radius: 10px;
+            background: rgba(34, 35, 35, 0.8);
         }   
+        span {
+            color: red;
+        }
     </style>  
 </head>
 <body>
     <p class="prompt__result"></p>
-    <p class="result__seconds"></p>
+ 
+    <p class="result__seconds">There are <span class="red"></span> seconds in an hour⏰and <span class="redd"></span> seconds in a day⌚.<br>In 28 days it’s <span class="reddd"></span> seconds⌛.<br>Interesting fact I have already lived <span class="redddd"></span> seconds🕓.</p>
     <script src="./js/task-2-8.js"></script>
 </body>
 </html>

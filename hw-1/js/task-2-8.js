@@ -22,18 +22,19 @@ alert(myNameInEnglish);
 // task4
 
 const user = {
-    name: "Nicholas",
-    age: 27,
-    likesCat: true,
-    hasFavoriteFood: undefined,
-    favoriteVegetable: null
+    "String": "Nicholas",
+    "Number": 27,
+    "Baloon": true,
+    "Undefined": undefined,
+    "Null": null
 }
+
 console.log(
-    typeof user.name + " / " +
-    typeof user.age + " / " +
-    typeof user.likesCat + " / " +
-    typeof user.hasFavoriteFood + " / " +
-    typeof user.favoriteVegetable
+    typeof user.String + " / " +
+    typeof user.Number + " / " +
+    typeof user.Baloon + " / " +
+    typeof user.Undefined + " / " +
+    typeof user.Null
 );
 
 // task5
@@ -84,7 +85,13 @@ const daysInAMonth = 28; //February
 const secondsInAMonth = secondsInADay * daysInAMonth;
 alert(secondsInAMonth); 
 
-document.querySelector(".result__seconds").innerHTML = "There are " + secondsInAnHour  + " seconds in an hour⏰ " +  " and " + secondsInADay + " seconds in a day⌚. " + " In 28 days it’s " + secondsInAMonth + " seconds⌛.";
+const daysInAYear = 365;
+const secondsInaYear = secondsInADay * daysInAYear;
+const secondsInMyLive = myAge * secondsInaYear;
+
+const resultOfSeconds = "There are " + secondsInAnHour  + " seconds in an hour⏰ " +  " and " + secondsInADay + " seconds in a day⌚. " + " In 28 days it’s " + secondsInAMonth + " seconds⌛." + " Interesting fact I have already lived " + secondsInMyLive + " seconds🕓";
+
+document.querySelector(".result__seconds").innerHTML = resultOfSeconds;
 
 
 

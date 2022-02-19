@@ -96,8 +96,15 @@ const secondsInMyLive = myAge * secondsInaYear;
 document.querySelector(".red").innerHTML = secondsInAnHour;
 document.querySelector(".redd").innerHTML = secondsInADay;
 document.querySelector(".reddd").innerHTML = secondsInADay;
-document.querySelector(".redddd").innerHTML = secondsInMyLive;
+// document.querySelector(".redddd").innerHTML = secondsInMyLive;
 
 
+let seconds =  851472000;
+const el = document.getElementById('seconds-counter');
 
+function incrementSeconds() {
+    seconds += 1;
+    el.innerText = seconds;
+}
+const cancel = setInterval(incrementSeconds, 1000);
 

@@ -64,9 +64,9 @@ console.log(hasCat);
 
 // task7
 
-const userLogin = prompt("Please enter your Login");
-const userEmail = prompt("Please enter your Email");
-const userPassword = prompt("Please enter your Password");
+const userLogin = prompt("Please enter your Login", "Enter your login here");
+const userEmail = prompt("Please enter your Email", "Enter your email here");
+const userPassword = prompt("Please enter your Password", "Enter your password here");
 alert("Dear " + userLogin + " , " + " your email is " + userEmail + " , " + " your password is " + userPassword + "✌️");
 document.querySelector(".prompt__result").innerHTML = "Dear " + userLogin + " , " + " your email is " + userEmail + " , " + " your password is " + userPassword + "✌️";  
 

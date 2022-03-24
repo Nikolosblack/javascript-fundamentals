@@ -87,6 +87,8 @@ if ((Math.pow(sideOne, 2) + Math.pow(sideTwo, 2)) == (Math.pow(sideThree, 2)) ||
 let date = new Date();
 let time = date.getHours();
 
+// if else
+
 if (time > 17 && time <= 23) {
 	alert("Good evening Ukraine!");
 } else if (time > 5 && time <= 11) {
@@ -96,6 +98,8 @@ if (time > 17 && time <= 23) {
 } else {
 	alert("Good night Ukraine!");
 }
+
+// Ternary Operator
 
 function checkTime(time) {
 
@@ -107,36 +111,35 @@ function checkTime(time) {
 
 }
 checkTime(time);
-  
+
+// switch
 
 switch (time) {
-	case 5:
-	case 6:
-	case 7:
-	case 8:
-	case 9:
-	case 10:
-	case 11:
-		alert("morning");
-		break;
-	case 12:
-	case 13:
-	case 14:
-	case 15:
-	case 16:
-	case 17:
-		alert("day");
-		break;
-	case 18:
-	case 19:
-	case 20:
-	case 21:
-	case 22:
-	case 23:
-		alert("evening");
-		break;
-	default:
-		alert("night");
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+        alert("morning");
+        break;
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+        alert("day");
+        break;
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
+        alert("evening");
+        break;
+    default:
+        alert("night");
 }
-
-

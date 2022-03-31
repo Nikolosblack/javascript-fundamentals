@@ -65,55 +65,73 @@ function raiseToDegree(a, b) {
 if (b < 1) {
   alert("Try to use a positive integer");
 } else {
-  console.log((raiseToDegree(a, b)));
+  console.log(raiseToDegree(a, b));
 }
 
 //task-5
 
 function findMin() {
+  let min = arguments[0];
 
-    let min = arguments[0];
-    
-    for (let i = 1; i < arguments.length; i++) {
-        if (min > arguments[i]) {
-            min = arguments[i];
-        }
+  for (let i = 1; i < arguments.length; i++) {
+    if (min > arguments[i]) {
+      min = arguments[i];
     }
-    return min;
+  }
+  return min;
 }
-console.log(findMin(11, 12, 13, 21, 22, 23, 97, 98, 99, -1));
-console.log(findMin(0,1,-400));
-console.log(findMin(1,6,0));
-console.log(findMin(300,-300)); 
+console.log(findMin(11, 12, 13, 21, 22, 23, 97, 98, 99, 1));
+console.log(findMin(0, 1, -400));
+console.log(findMin(1, 6, 0));
+console.log(findMin(300, -300, -99999999));
 
 //task-6
 
 let uniqueArray = [1, 2, 3, 4, 5];
 let nonUnique = [1, 1, 2, 2];
-let a = [1,2];
-let b = [2,2];
-let c = [3,4];
 
 function findUnique(arr) {
   let valuesAlreadySeen = [];
 
   for (let i = 0; i < arr.length; i++) {
-    let value = arr[i]
+    let value = arr[i];
     if (valuesAlreadySeen.indexOf(value) !== -1) {
-      return false
+      return false;
     }
-    valuesAlreadySeen.push(value)
+    valuesAlreadySeen.push(value);
   }
-  return true
+  return true;
 }
 
 console.log(findUnique(uniqueArray));
 console.log(findUnique(nonUnique));
-console.log(findUnique(a));
-console.log(findUnique(b));
-console.log(findUnique(c));
+
+//
+
+function findUniqueSort(arr) {
+  arr.sort();
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] == arr[i - 1]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(findUniqueSort(uniqueArray));
+console.log(findUniqueSort(nonUnique));
 
 //task-7
+
+function lastElem(arr, n) {
+  if (n == null) return arr.slice(-1);
+  let res = arr.slice(-n);
+  return res;
+}
+
+console.log(lastElem([3, 4, 10, -5]));
+console.log(lastElem([3, 4, 10, -5], 2));
+console.log(lastElem([3, 4, 10, -5], 8));
 
 //task-8
 
